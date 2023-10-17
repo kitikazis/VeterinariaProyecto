@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F11AF93C-F3BB-4B81-AC67-C035283F40C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Veterinaria.My.MyApplication</StartupObject>
+    <RootNamespace>Veterinaria</RootNamespace>
+    <AssemblyName>Veterinaria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Veterinaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Veterinaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientesForm.Designer.vb">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprasForm.Designer.vb">
+      <DependentUpon>ComprasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComprasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosForm.Designer.vb">
+      <DependentUpon>EmpleadosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PagosForm.Designer.vb">
+      <DependentUpon>PagosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm.Designer.vb">
+      <DependentUpon>ProductosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteComprasForm.Designer.vb">
+      <DependentUpon>ReporteComprasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteComprasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePagosForm.Designer.vb">
+      <DependentUpon>ReportePagosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePagosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesForm.Designer.vb">
+      <DependentUpon>ReportesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentasForm.Designer.vb">
+      <DependentUpon>ReporteVentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentasForm.Designer.vb">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeterinariaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeterinariaDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientesForm.resx">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprasForm.resx">
+      <DependentUpon>ComprasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosForm.resx">
+      <DependentUpon>EmpleadosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagosForm.resx">
+      <DependentUpon>PagosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm.resx">
+      <DependentUpon>ProductosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteComprasForm.resx">
+      <DependentUpon>ReporteComprasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePagosForm.resx">
+      <DependentUpon>ReportePagosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesForm.resx">
+      <DependentUpon>ReportesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentasForm.resx">
+      <DependentUpon>ReporteVentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasForm.resx">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="VeterinariaDataSet.xsc">
+      <DependentUpon>VeterinariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VeterinariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeterinariaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeterinariaDataSet.xss">
+      <DependentUpon>VeterinariaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230921_124537.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
