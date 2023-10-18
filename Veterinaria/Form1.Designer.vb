@@ -52,6 +52,7 @@ Partial Class Form1
         Me.BtnProductos = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContendor = New System.Windows.Forms.Panel()
+        Me.lbproductos = New System.Windows.Forms.Label()
         Me.BarraTitulo.SuspendLayout()
         CType(Me.BtnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,6 +61,7 @@ Partial Class Form1
         Me.MenuVertical.SuspendLayout()
         Me.SubMenuReportes.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelContendor.SuspendLayout()
         Me.SuspendLayout()
         '
         'BarraTitulo
@@ -437,11 +439,24 @@ Partial Class Form1
         'PanelContendor
         '
         Me.PanelContendor.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.PanelContendor.Controls.Add(Me.lbproductos)
         Me.PanelContendor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContendor.Location = New System.Drawing.Point(220, 38)
         Me.PanelContendor.Name = "PanelContendor"
         Me.PanelContendor.Size = New System.Drawing.Size(1080, 612)
         Me.PanelContendor.TabIndex = 2
+        '
+        'lbproductos
+        '
+        Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.lbproductos.AutoSize = True
+        Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbproductos.Location = New System.Drawing.Point(316, 60)
+        Me.lbproductos.Name = "lbproductos"
+        Me.lbproductos.Size = New System.Drawing.Size(405, 55)
+        Me.lbproductos.TabIndex = 5
+        Me.lbproductos.Text = "Reporte Compras"
+        Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form1
         '
@@ -462,6 +477,8 @@ Partial Class Form1
         Me.MenuVertical.ResumeLayout(False)
         Me.SubMenuReportes.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelContendor.ResumeLayout(False)
+        Me.PanelContendor.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -495,4 +512,5 @@ Partial Class Form1
     Friend WithEvents BtnPagos As Button
     Friend WithEvents Panel10 As Panel
     Friend WithEvents BtnCompras As Button
+    Friend WithEvents lbproductos As Label
 End Class
