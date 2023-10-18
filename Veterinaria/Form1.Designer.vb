@@ -52,8 +52,9 @@ Partial Class Form1
         Me.BtnProductos = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContendor = New System.Windows.Forms.Panel()
-        Me.lbproductos = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbproductos = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.BarraTitulo.SuspendLayout()
         CType(Me.BtnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -440,6 +441,7 @@ Partial Class Form1
         'PanelContendor
         '
         Me.PanelContendor.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.PanelContendor.Controls.Add(Me.Label2)
         Me.PanelContendor.Controls.Add(Me.Label1)
         Me.PanelContendor.Controls.Add(Me.lbproductos)
         Me.PanelContendor.Dock = System.Windows.Forms.DockStyle.Fill
@@ -448,29 +450,41 @@ Partial Class Form1
         Me.PanelContendor.Size = New System.Drawing.Size(1080, 612)
         Me.PanelContendor.TabIndex = 2
         '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(534, 53)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(405, 55)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Reporte Compras"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'lbproductos
         '
         Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lbproductos.AutoSize = True
         Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbproductos.Location = New System.Drawing.Point(316, 60)
+        Me.lbproductos.Location = New System.Drawing.Point(48, 53)
         Me.lbproductos.Name = "lbproductos"
         Me.lbproductos.Size = New System.Drawing.Size(405, 55)
         Me.lbproductos.TabIndex = 5
         Me.lbproductos.Text = "Reporte Compras"
         Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
+        'Label2
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(329, 232)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(405, 55)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Reporte Compras"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(302, 149)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(405, 55)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Reporte Compras"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form1
         '
@@ -528,4 +542,5 @@ Partial Class Form1
     Friend WithEvents BtnCompras As Button
     Friend WithEvents lbproductos As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
