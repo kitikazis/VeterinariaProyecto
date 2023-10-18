@@ -43,6 +43,7 @@ Partial Class ReportePagosForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lbproductos)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ReportePagosForm"
         Me.Text = "ReportePagosForm"
         Me.ResumeLayout(False)

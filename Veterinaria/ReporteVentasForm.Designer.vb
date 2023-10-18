@@ -43,6 +43,7 @@ Partial Class ReporteVentasForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lbproductos)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ReporteVentasForm"
         Me.Text = "ReporteVentasForm"
         Me.ResumeLayout(False)

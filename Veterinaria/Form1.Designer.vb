@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.BarraTitulo = New System.Windows.Forms.Panel()
@@ -53,8 +53,6 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContendor = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbproductos = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.BarraTitulo.SuspendLayout()
         CType(Me.BtnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,13 +61,13 @@ Partial Class Form1
         Me.MenuVertical.SuspendLayout()
         Me.SubMenuReportes.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelContendor.SuspendLayout()
         Me.SuspendLayout()
         '
         'BarraTitulo
         '
         Me.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.BarraTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.BarraTitulo.Controls.Add(Me.Label1)
         Me.BarraTitulo.Controls.Add(Me.BtnRestaurar)
         Me.BarraTitulo.Controls.Add(Me.BtnMaximizar)
         Me.BarraTitulo.Controls.Add(Me.BtnMinimizar)
@@ -441,9 +439,6 @@ Partial Class Form1
         'PanelContendor
         '
         Me.PanelContendor.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.PanelContendor.Controls.Add(Me.Label2)
-        Me.PanelContendor.Controls.Add(Me.Label1)
-        Me.PanelContendor.Controls.Add(Me.lbproductos)
         Me.PanelContendor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContendor.Location = New System.Drawing.Point(220, 38)
         Me.PanelContendor.Name = "PanelContendor"
@@ -454,37 +449,14 @@ Partial Class Form1
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(534, 53)
+        Me.Label1.CausesValidation = False
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label1.Location = New System.Drawing.Point(559, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(405, 55)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Reporte Compras"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lbproductos
-        '
-        Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.lbproductos.AutoSize = True
-        Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbproductos.Location = New System.Drawing.Point(48, 53)
-        Me.lbproductos.Name = "lbproductos"
-        Me.lbproductos.Size = New System.Drawing.Size(405, 55)
-        Me.lbproductos.TabIndex = 5
-        Me.lbproductos.Text = "Reporte Compras"
-        Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(302, 149)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(405, 55)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Reporte Compras"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label1.Size = New System.Drawing.Size(183, 37)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Veterinaria"
         '
         'Form1
         '
@@ -498,6 +470,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.BarraTitulo.ResumeLayout(False)
+        Me.BarraTitulo.PerformLayout()
         CType(Me.BtnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -505,8 +478,6 @@ Partial Class Form1
         Me.MenuVertical.ResumeLayout(False)
         Me.SubMenuReportes.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelContendor.ResumeLayout(False)
-        Me.PanelContendor.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -540,7 +511,5 @@ Partial Class Form1
     Friend WithEvents BtnPagos As Button
     Friend WithEvents Panel10 As Panel
     Friend WithEvents BtnCompras As Button
-    Friend WithEvents lbproductos As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Private WithEvents Label1 As Label
 End Class

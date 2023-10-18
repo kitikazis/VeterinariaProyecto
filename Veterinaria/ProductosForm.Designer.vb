@@ -61,7 +61,7 @@ Partial Class ProductosForm
         Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Me.ServiciosTableAdapter
         Me.TableAdapterManager.UpdateOrder = Veterinaria.VeterinariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         Me.TableAdapterManager.VeterinariosTableAdapter = Nothing
         '

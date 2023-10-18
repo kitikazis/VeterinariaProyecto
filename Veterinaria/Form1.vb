@@ -80,7 +80,7 @@ Public Class Form1
     End Sub
 
     Private Sub BtnReportes_Click(sender As Object, e As EventArgs) Handles BtnReportes.Click
-        AbrirFormHija(New ReportesForm())
+
         SubMenuReportes.Visible = True
 
     End Sub

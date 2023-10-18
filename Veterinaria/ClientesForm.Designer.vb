@@ -22,33 +22,38 @@ Partial Class ClientesForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbproductos = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'lbproductos
-        '
-        Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.lbproductos.AutoSize = True
-        Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbproductos.Location = New System.Drawing.Point(253, 20)
-        Me.lbproductos.Name = "lbproductos"
-        Me.lbproductos.Size = New System.Drawing.Size(197, 55)
-        Me.lbproductos.TabIndex = 3
-        Me.lbproductos.Text = "Clientes"
-        Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'ClientesForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lbproductos)
+        Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Name = "ClientesForm"
-        Me.Text = "ClientesForm"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lbproductos As Label
+    Friend WithEvents VeterinariaDataSet As VeterinariaDataSet
+    Friend WithEvents PacientesBindingSource As BindingSource
+    Friend WithEvents PacientesTableAdapter As VeterinariaDataSetTableAdapters.PacientesTableAdapter
+    Friend WithEvents TableAdapterManager As VeterinariaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents PacientesBindingNavigator As BindingNavigator
+    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
+    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
+    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
+    Friend WithEvents PacientesBindingNavigatorSaveItem As ToolStripButton
+    Friend WithEvents ServiciosTableAdapter As VeterinariaDataSetTableAdapters.ServiciosTableAdapter
+    Friend WithEvents ServiciosBindingSource As BindingSource
+    Friend WithEvents ServiciosDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
 End Class
