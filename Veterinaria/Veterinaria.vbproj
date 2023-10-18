@@ -73,29 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientesForm.Designer.vb">
-      <DependentUpon>ClientesForm.vb</DependentUpon>
+    <Compile Include="Formularios\FormCompras.Designer.vb">
+      <DependentUpon>FormCompras.vb</DependentUpon>
     </Compile>
-    <Compile Include="ClientesForm.vb">
+    <Compile Include="Formularios\FormCompras.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ComprasForm.Designer.vb">
-      <DependentUpon>ComprasForm.vb</DependentUpon>
+    <Compile Include="Formularios\FormEmpleados.Designer.vb">
+      <DependentUpon>FormEmpleados.vb</DependentUpon>
     </Compile>
-    <Compile Include="ComprasForm.vb">
+    <Compile Include="Formularios\FormEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpleadosForm.Designer.vb">
-      <DependentUpon>EmpleadosForm.vb</DependentUpon>
+    <Compile Include="Formularios\FormClientesUwu.Designer.vb">
+      <DependentUpon>FormClientesUwu.vb</DependentUpon>
     </Compile>
-    <Compile Include="EmpleadosForm.vb">
+    <Compile Include="Formularios\FormClientesUwu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Interfaz.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Interfaz.Designer.vb">
+      <DependentUpon>Interfaz.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPagos.Designer.vb">
+      <DependentUpon>FormPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPagos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.vb">
@@ -119,40 +125,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ProductosForm.Designer.vb">
-      <DependentUpon>ProductosForm.vb</DependentUpon>
+    <Compile Include="Formularios\FormProductos.Designer.vb">
+      <DependentUpon>FormProductos.vb</DependentUpon>
     </Compile>
-    <Compile Include="ProductosForm.vb">
+    <Compile Include="Formularios\FormProductos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteComprasForm.Designer.vb">
+    <Compile Include="Formularios\Reportes\.Designer.vb">
       <DependentUpon>ReporteComprasForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ReporteComprasForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportePagosForm.Designer.vb">
+    <Compile Include="Formularios\Reportes\ReporteComprasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\ReportePagosForm.Designer.vb">
       <DependentUpon>ReportePagosForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReportePagosForm.vb">
+    <Compile Include="Formularios\Reportes\ReportePagosForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesForm.Designer.vb">
-      <DependentUpon>ReportesForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ReportesForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReporteVentasForm.Designer.vb">
+    <Compile Include="Formularios\Reportes\ReporteVentasForm.Designer.vb">
       <DependentUpon>ReporteVentasForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReporteVentasForm.vb">
+    <Compile Include="Formularios\Reportes\ReporteVentasForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentasForm.Designer.vb">
-      <DependentUpon>VentasForm.vb</DependentUpon>
+    <Compile Include="Formularios\FormVentas.Designer.vb">
+      <DependentUpon>FormVentas.vb</DependentUpon>
     </Compile>
-    <Compile Include="VentasForm.vb">
+    <Compile Include="Formularios\FormVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VeterinariaDataSet.Designer.vb">
@@ -162,17 +163,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ClientesForm.resx">
-      <DependentUpon>ClientesForm.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormCompras.resx">
+      <DependentUpon>FormCompras.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ComprasForm.resx">
-      <DependentUpon>ComprasForm.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormEmpleados.resx">
+      <DependentUpon>FormEmpleados.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpleadosForm.resx">
-      <DependentUpon>EmpleadosForm.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormClientesUwu.resx">
+      <DependentUpon>FormClientesUwu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Interfaz.resx">
+      <DependentUpon>Interfaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPagos.resx">
+      <DependentUpon>FormPagos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
@@ -183,23 +187,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductosForm.resx">
-      <DependentUpon>ProductosForm.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormProductos.resx">
+      <DependentUpon>FormProductos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteComprasForm.resx">
+    <EmbeddedResource Include="Formularios\Reportes\ReporteComprasForm.resx">
       <DependentUpon>ReporteComprasForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportePagosForm.resx">
+    <EmbeddedResource Include="Formularios\Reportes\ReportePagosForm.resx">
       <DependentUpon>ReportePagosForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesForm.resx">
-      <DependentUpon>ReportesForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteVentasForm.resx">
+    <EmbeddedResource Include="Formularios\Reportes\ReporteVentasForm.resx">
       <DependentUpon>ReporteVentasForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentasForm.resx">
-      <DependentUpon>VentasForm.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormVentas.resx">
+      <DependentUpon>FormVentas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

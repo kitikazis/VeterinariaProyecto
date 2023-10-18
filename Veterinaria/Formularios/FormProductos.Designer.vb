@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class ProductosForm
+Partial Class FormProductos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -61,7 +61,7 @@ Partial Class ProductosForm
         Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Me.ServiciosTableAdapter
         Me.TableAdapterManager.UpdateOrder = Veterinaria.VeterinariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         Me.TableAdapterManager.VeterinariosTableAdapter = Nothing
         '
@@ -77,14 +77,15 @@ Partial Class ProductosForm
         Me.lbproductos.Text = "Productos"
         Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ProductosForm
+        'FormProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lbproductos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "ProductosForm"
+        Me.Name = "FormProductos"
         Me.Text = "ProductosForm"
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ServiciosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

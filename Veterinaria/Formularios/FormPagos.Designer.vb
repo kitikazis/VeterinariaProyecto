@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ReportesForm
+Partial Class FormPagos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -29,23 +29,25 @@ Partial Class ReportesForm
         '
         Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lbproductos.AutoSize = True
+        Me.lbproductos.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbproductos.Location = New System.Drawing.Point(295, 23)
+        Me.lbproductos.Location = New System.Drawing.Point(239, 9)
         Me.lbproductos.Name = "lbproductos"
-        Me.lbproductos.Size = New System.Drawing.Size(220, 55)
-        Me.lbproductos.TabIndex = 3
-        Me.lbproductos.Text = "Reportes"
+        Me.lbproductos.Size = New System.Drawing.Size(161, 55)
+        Me.lbproductos.TabIndex = 4
+        Me.lbproductos.Text = "Pagos"
         Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ReportesForm
+        'FormPagos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lbproductos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "ReportesForm"
-        Me.Text = "ReportesForm"
+        Me.Name = "FormPagos"
+        Me.Text = "FormPagos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

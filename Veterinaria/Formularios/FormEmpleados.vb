@@ -1,4 +1,4 @@
-﻿Public Class EmpleadosForm
+﻿Public Class FormEmpleados
     Private Sub EmpleadosBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.EmpleadosBindingSource.EndEdit()

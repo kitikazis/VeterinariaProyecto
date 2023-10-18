@@ -1,4 +1,4 @@
-﻿Public Class ProductosForm
+﻿Public Class FormProductos
     Private Sub ServiciosBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.ServiciosBindingSource.EndEdit()

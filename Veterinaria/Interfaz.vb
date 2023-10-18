@@ -3,7 +3,7 @@ Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 Imports System.Drawing
 
-Public Class Form1
+Public Class Interfaz
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -47,12 +47,12 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnProductos.Click
-        AbrirFormHija(New ProductosForm())
+        AbrirFormHija(New FormProductos())
     End Sub
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click
-        AbrirFormHija(New ClientesForm())
+        AbrirFormHija(New FormClientesUwu())
     End Sub
     Private isDragging As Boolean = False
     Private mouseOffset As Point
@@ -98,7 +98,7 @@ Public Class Form1
 
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles BtnVenta.Click
-        AbrirFormHija(New VentasForm())
+        AbrirFormHija(New FormVentas())
     End Sub
 
     Private Sub PictureBox1_Click_3(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -118,16 +118,19 @@ Public Class Form1
     End Sub
 
     Private Sub BtnCompra_Click(sender As Object, e As EventArgs) Handles BtnCompra.Click
-        AbrirFormHija(New ComprasForm())
+        AbrirFormHija(New FormCompras())
     End Sub
 
     Private Sub Btn_Empleados_Click(sender As Object, e As EventArgs) Handles Btn_Empleados.Click
-        AbrirFormHija(New EmpleadosForm())
+        AbrirFormHija(New FormEmpleados())
     End Sub
+
 
     Private Sub Btn_Pagos_Click(sender As Object, e As EventArgs) Handles Btn_Pagos.Click
-        AbrirFormHija(New ComprasForm())
+        AbrirFormHija(New FormPagos())
     End Sub
 
-
+    Private Sub BtnPagos_Click(sender As Object, e As EventArgs) Handles BtnPagos.Click
+        AbrirFormHija(New ReportePagosForm)
+    End Sub
 End Class

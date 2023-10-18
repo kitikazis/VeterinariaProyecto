@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class EmpleadosForm
+Partial Class FormEmpleados
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -77,14 +77,15 @@ Partial Class EmpleadosForm
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         Me.TableAdapterManager.VeterinariosTableAdapter = Nothing
         '
-        'EmpleadosForm
+        'FormEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1140, 535)
         Me.Controls.Add(Me.lbproductos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "EmpleadosForm"
+        Me.Name = "FormEmpleados"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "EmpleadosForm"
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
