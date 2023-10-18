@@ -73,7 +73,7 @@ Partial Class EmpleadosForm
         Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Veterinaria.VeterinariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         Me.TableAdapterManager.VeterinariosTableAdapter = Nothing
         '

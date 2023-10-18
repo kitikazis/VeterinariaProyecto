@@ -90,10 +90,7 @@ Public Class Form1
         SubMenuReportes.Visible = False
     End Sub
 
-    Private Sub BtnPagos_Click(sender As Object, e As EventArgs) Handles BtnPagos.Click
-        AbrirFormHija(New ReportePagosForm())
-        SubMenuReportes.Visible = False
-    End Sub
+
 
     Private Sub SubMenuReportes_Paint(sender As Object, e As PaintEventArgs) Handles SubMenuReportes.Paint
 
@@ -129,6 +126,8 @@ Public Class Form1
     End Sub
 
     Private Sub Btn_Pagos_Click(sender As Object, e As EventArgs) Handles Btn_Pagos.Click
-        AbrirFormHija(New PagosForm())
+        AbrirFormHija(New ComprasForm())
     End Sub
+
+
 End Class

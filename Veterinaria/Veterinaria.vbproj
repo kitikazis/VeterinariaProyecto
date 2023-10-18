@@ -119,12 +119,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PagosForm.Designer.vb">
-      <DependentUpon>PagosForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PagosForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ProductosForm.Designer.vb">
       <DependentUpon>ProductosForm.vb</DependentUpon>
     </Compile>
@@ -188,9 +182,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PagosForm.resx">
-      <DependentUpon>PagosForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductosForm.resx">
       <DependentUpon>ProductosForm.vb</DependentUpon>
