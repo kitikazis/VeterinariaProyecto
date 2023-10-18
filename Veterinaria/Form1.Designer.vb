@@ -53,6 +53,7 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContendor = New System.Windows.Forms.Panel()
         Me.lbproductos = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.BarraTitulo.SuspendLayout()
         CType(Me.BtnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -439,6 +440,7 @@ Partial Class Form1
         'PanelContendor
         '
         Me.PanelContendor.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.PanelContendor.Controls.Add(Me.Label1)
         Me.PanelContendor.Controls.Add(Me.lbproductos)
         Me.PanelContendor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContendor.Location = New System.Drawing.Point(220, 38)
@@ -457,6 +459,18 @@ Partial Class Form1
         Me.lbproductos.TabIndex = 5
         Me.lbproductos.Text = "Reporte Compras"
         Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(329, 232)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(405, 55)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Reporte Compras"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form1
         '
@@ -513,4 +527,5 @@ Partial Class Form1
     Friend WithEvents Panel10 As Panel
     Friend WithEvents BtnCompras As Button
     Friend WithEvents lbproductos As Label
+    Friend WithEvents Label1 As Label
 End Class
