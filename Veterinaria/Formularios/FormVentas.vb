@@ -14,17 +14,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnBorrarVentas.Click
 
-        If VentasDataGridView.SelectedRows.Count > 0 Then
 
-            Dim selectedRow As DataGridViewRow = VentasDataGridView.SelectedRows(0)
-
-
-            VentasDataGridView.Rows.Remove(selectedRow)
-
-            Me.VentasTableAdapter.Update(Me.VeterinariaDataSet.Ventas)
-        Else
-            MessageBox.Show("No row is selected for deletion.")
-        End If
     End Sub
 
 
@@ -49,26 +39,35 @@
     End Sub
 
     Private Sub BtnAgregarVenta_Click(sender As Object, e As EventArgs) Handles BtnAgregarVenta.Click
-        ' Obtener la fecha y el total desde los controles
+        ' Obtén la fecha y el total de venta de los controles correspondientes
         Dim fechaVenta As Date = DateTimeVentas.Value
-        Dim totalVenta As Decimal
+        Dim totalVenta As Decimal = Decimal.Parse(TxtBoxTotalVenta.Text) ' Asegúrate de validar la entrada del usuario
 
-        If Decimal.TryParse(TxtBoxTotalVenta.Text, totalVenta) Then
-            ' Agregar una nueva fila a la fuente de datos vinculada (por ejemplo, VentasBindingSource)
-            Dim newRow As DataRow = Me.VeterinariaDataSet.Ventas.NewRow()
-            newRow("FechaVenta") = fechaVenta
-            newRow("TotalVenta") = totalVenta
-            Me.VeterinariaDataSet.Ventas.Rows.Add(newRow)
+        ' Agrega una nueva fila a la tabla
+        Dim nuevaFila As VeterinariaDataSet.VentasRow = VeterinariaDataSet.Ventas.NewVentasRow()
+        nuevaFila.FechaVenta = fechaVenta
+        nuevaFila.TotalVenta = totalVenta
 
-            ' Actualizar la fuente de datos
-            Me.VentasTableAdapter.Update(Me.VeterinariaDataSet.Ventas)
+        ' Agrega la fila a la tabla
+        VeterinariaDataSet.Ventas.Rows.Add(nuevaFila)
 
-            ' Borrar el campo TxtBoxTotalVenta
-            TxtBoxTotalVenta.Text = String.Empty
-        Else
-            MessageBox.Show("El valor del total no es válido.")
+        ' Actualiza la base de datos
+        Me.VentasTableAdapter.Update(Me.VeterinariaDataSet.Ventas)
+
+        ' Obtén el ID de la nueva venta como número positivo
+        Dim idVenta As Integer = nuevaFila.Id ' Supongamos que el nombre de la columna de ID es "IDVenta"
+        If idVenta < 0 Then
+            idVenta = Math.Abs(idVenta) ' Convierte el valor negativo a positivo
         End If
+
+        ' Muestra el ID de la venta, puedes usarlo para informar al usuario.
+        MessageBox.Show("Venta agregada con ID: " & idVenta)
+
+        ' Limpia los controles después de agregar la venta
+        DateTimeVentas.Value = DateTime.Now ' Puedes configurar la fecha actual u otra por defecto
+        TxtBoxTotalVenta.Clear()
     End Sub
+
 
 
 
@@ -82,26 +81,7 @@
     End Sub
 
     Private Sub BtnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        If VentasDataGridView.SelectedRows.Count > 0 Then
-            ' Obtener la fila seleccionada
-            Dim selectedRow As DataGridViewRow = VentasDataGridView.SelectedRows(0)
 
-            ' Obtener los valores de las celdas de la fila seleccionada
-            Dim fechaVenta As Date = CDate(selectedRow.Cells("FechaVenta").Value)
-            Dim totalVenta As Decimal = CDec(selectedRow.Cells("TotalVenta").Value)
-
-            ' Aquí puedes implementar la lógica para permitir la edición de los valores de fechaVenta y totalVenta,
-            ' por ejemplo, mostrando un cuadro de diálogo o permitiendo la edición directamente en el DataGridView.
-
-            ' Después de la edición, actualiza la fila de datos en tu conjunto de datos
-            selectedRow.Cells("FechaVenta").Value = fechaVenta
-            selectedRow.Cells("TotalVenta").Value = totalVenta
-
-            ' Finalmente, guarda los cambios en la base de datos
-            Me.VentasTableAdapter.Update(Me.VeterinariaDataSet.Ventas)
-        Else
-            MessageBox.Show("No se ha seleccionado ninguna fila para editar.")
-        End If
     End Sub
 
 

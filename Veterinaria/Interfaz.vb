@@ -2,6 +2,7 @@
 Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Runtime.Remoting.Messaging
 
 Public Class Interfaz
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -102,7 +103,7 @@ Public Class Interfaz
     End Sub
 
     Private Sub PictureBox1_Click_3(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        AbrirFormHija(New Inicio())
+        ' AbrirFormHija(New ReturnMessage())
     End Sub
     Private Sub AbrirFormHija(ByVal formHija As Object)
         If Me.PanelContendor.Controls.Count > 0 Then
