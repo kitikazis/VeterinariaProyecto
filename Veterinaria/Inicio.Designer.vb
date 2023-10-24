@@ -30,16 +30,16 @@ Partial Class Inicio
         Me.lbproductos.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lbproductos.AutoSize = True
         Me.lbproductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbproductos.Location = New System.Drawing.Point(278, 65)
+        Me.lbproductos.Location = New System.Drawing.Point(287, 65)
         Me.lbproductos.Name = "lbproductos"
-        Me.lbproductos.Size = New System.Drawing.Size(374, 55)
+        Me.lbproductos.Size = New System.Drawing.Size(466, 69)
         Me.lbproductos.TabIndex = 4
         Me.lbproductos.Text = "InicioMenuPerro"
         Me.lbproductos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Inicio
         '
-        Me.ClientSize = New System.Drawing.Size(875, 423)
+        Me.ClientSize = New System.Drawing.Size(893, 423)
         Me.Controls.Add(Me.lbproductos)
         Me.Name = "Inicio"
         Me.ResumeLayout(False)
